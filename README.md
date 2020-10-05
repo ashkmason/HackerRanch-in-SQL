@@ -102,3 +102,58 @@ Query the Western Longitude (LONG_W)where the smallest Northern Latitude (LAT_N)
 ## Asian Population
 Given the CITY and COUNTRY tables, query the sum of the populations of all cities where the CONTINENT is 'Asia'.
 Note: CITY.CountryCode and COUNTRY.Code are matching key columns.
+
+## African Cities
+Given the CITY and COUNTRY tables, query the names of all cities where the CONTINENT is 'Africa'.
+Note: CITY.CountryCode and COUNTRY.Code are matching key columns.
+
+## Average Population of Each Continent
+Given the CITY and COUNTRY tables, query the names of all the continents (COUNTRY.Continent) and their respective average city populations (CITY.Population) rounded down to the nearest integer.
+Note: CITY.CountryCode and COUNTRY.Code are matching key columns.
+
+## Draw The Triangle 1
+P(R) represents a pattern drawn by Julia in R rows. The following pattern represents P(5):
+* * * * * 
+* * * * 
+* * * 
+* * 
+*
+Write a query to print the pattern P(20).
+
+## Draw The Triangle 2
+P(R) represents a pattern drawn by Julia in R rows. The following pattern represents P(5):
+*
+* * 
+* * *
+* * * * 
+* * * * *
+Write a query to print the pattern P(20).
+
+## Binary Tree Nodes
+You are given a table, BST, containing two columns: N and P, where N represents the value of a node in Binary Tree, and P is the parent of N.
+Write a query to find the node type of Binary Tree ordered by the value of the node. Output one of the following for each node:
+- Root: If node is root node.
+- Leaf: If node is leaf node.
+- Inner: If node is neither root nor leaf node.
+
+
+## New Companies
+Amber's conglomerate corporation just acquired some new companies. Each of the companies follows this hierarchy: 
+Founder -> Lead Manager -> Senior Manager -> Manager -> Employee
+Given the table schemas below, write a query to print the company_code, founder name, total number of lead managers, total number of senior managers, total number of managers, and total number of employees. Order your output by ascending company_code.
+
+Note:
+- The tables may contain duplicate records.
+- The company_code is string, so the sorting should not be numeric. For example, if the company_codes are C_1, C_2, and C_10, then the ascending company_codes will be C_1, C_10, and C_2.
+
+## Weather Observation Station 18
+Consider P1(a,b) and P2(c,d) to be two points on a 2D plane.
+- a happens to equal the minimum value in Northern Latitude (LAT_N in STATION).
+- b happens to equal the minimum value in Western Longitude (LONG_W in STATION).
+- c happens to equal the maximum value in Northern Latitude (LAT_N in STATION).
+- d happens to equal the maximum value in Western Longitude (LONG_W in STATION).
+Query the Manhattan Distance between points P1 and P2 and round it to a scale of 4 decimal places.
+
+## Weather Observation Station 19
+Consider P1(a,b) and P2(c,d) to be two points on a 2D plane where (a,b) are the respective minimum and maximum values of Northern Latitude (LAT_N) and (c,d) are the respective minimum and maximum values of Western Longitude (LONG_W) in STATION.
+Query the Euclidean Distance between points P1 and P2 and format your answer to display 4 decimal digits.
